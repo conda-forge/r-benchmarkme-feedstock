@@ -1,4 +1,4 @@
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/benchmarkme_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/benchmarkme/benchmarkme_{{ version }}.tar.gz
-  sha256: 626bb12224a182428f15bc3b13232debe567dbeb94b483a1a1663da0f3496d00
+  sha256: c95213964d482e340e2f1934583534bcf9905e934c750123b968367ce59d357b
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -50,9 +50,8 @@ test:
 about:
   home: https://github.com/csgillespie/benchmarkme
   license: GPL-2 | GPL-3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
-  summary: Benchmark your CPU and compare against other CPUs. Also provides  functions for obtaining
-    system specifications, such as RAM, CPU type, and R version.
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  summary: Benchmark your CPU and compare against other CPUs. Also provides  functions for obtaining system specifications, such as RAM, CPU type, and R version.
   license_family: GPL3
 
 extra:
