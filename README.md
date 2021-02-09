@@ -3,7 +3,7 @@ About r-benchmarkme
 
 Home: https://github.com/csgillespie/benchmarkme
 
-Package license: GPL-2 | GPL-3
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-benchmarkme-feedstock/blob/master/LICENSE.txt)
 
