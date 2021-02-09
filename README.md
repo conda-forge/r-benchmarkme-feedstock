@@ -5,11 +5,9 @@ Home: https://github.com/csgillespie/benchmarkme
 
 Package license: GPL-2 | GPL-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-benchmarkme-feedstock/blob/master/LICENSE.txt)
 
 Summary: Benchmark your CPU and compare against other CPUs. Also provides  functions for obtaining system specifications, such as RAM, CPU type, and R version.
-
-
 
 Current build status
 ====================
