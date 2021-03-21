@@ -1,4 +1,4 @@
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/benchmarkme_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/benchmarkme/benchmarkme_{{ version }}.tar.gz
-  sha256: d32b46f485b16308a02d28e9845c6b507bb6f03ac6db5b353186c5f3928eb3be
+  sha256: 37999b9e2df46dc274ad8aafd2b1c722d099e9680938c780defeda9d7fd7af7a
 
 build:
   merge_build_host: true  # [win]
